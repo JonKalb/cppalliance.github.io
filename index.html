@@ -152,6 +152,15 @@ evangelist, as this he speaks and travels to other conferences and user
 groups around the world.
 </p>
 
+<div id="home">
+  <h1>News</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
 <h2>FAQ</h2>
 <ul>
 <li><p><b>
@@ -193,27 +202,4 @@ groups around the world.
     </li>
 </ul>
 
-<h1>Activity</h1>
-<ul>
-<li>July 4, 2018 Added FAQ</li>
-<li>January 9, 2018 Update About</li>
-<li>January 9, 2018 Add Technical Committee</li>
-<li>January 2, 2018 Update mission statement</li>
-<li>January 2, 2018 Update team designations</li>
-<li>November 26, 2017 Jon Kalb joins as Advisor</li>
-<li>October 20, 2017 René Rivera joins as Advisor</li>
-<li>October 16, 2017 Jens Weller joins as Advisor</li>
-<li>October 1, 2017 Louis Tatta joins as Vice-Chairman</li>
-<li>July 7, 2017 Beast is accepted into Boost</li>
-</ul>
-
-<div id="home">
-  <h1>Updates</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-</div>
 
