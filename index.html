@@ -2,10 +2,16 @@
 layout: default
 title: The C++ Alliance
 ---
+<span>Mission</span>,
+<span>Vision</span>,
+<span>Activities</span>,
+<span>News</span>,
+<span>Team</span>,
+<span>Community</span>
+
 <div class="gold_headline">
 The C++ Alliance is a California non-profit 501(c)(3) (pending)
-organization whose primary function is to advance C++ by
-developing open source libraries.
+organization which exists to empower C++ users.
 </div>
 
 <h1>Mission</h1>
@@ -37,20 +43,7 @@ or other indirect support to conferences or other
 organizations with overlapping goals.
 </p>
 
-<h2>Activities</h2>
-
-<p>
-The organization achieves its mission through these means:
-</p>
-
-<ul>
-<li>Fund open source libraries</li>
-<li>Organize and support C++ conferences and community activities</li>
-<li>Support and promote WG21 proceedings</li>
-<li>Provide C++ education</li>
-</ul>
-
-<h2>Our Vision</h2>
+<h1>Vision</h1>
 
 <p>
 Mankind has become increasingly reliant on software for all aspects
@@ -69,7 +62,23 @@ source libraries and talented individuals who make open source
 contributions.
 </p>
 
-<h2>Our Team</h2>
+<h1>Activities</h1>
+
+<p>
+The organization achieves its mission through these means:
+</p>
+
+<table style="width:100%;table-layout:fixed"><tr>
+<td>
+<p><b>Open Source</b></p>
+</td><td>
+<p><b>Community</b></p>
+</td><td>
+<p><b>Standards</b></p>
+</td><td>
+<p><b>Learning</b></p>
+</td>
+</tr></table>
 
 <h3>Board Members</h3>
 
@@ -170,7 +179,7 @@ groups around the world.
         {% when '1' or '21' or '31' %}{{ day }}st,
         {% when '2' or '22' %}{{ day }}nd,
         {% when '3' or '23' %}{{ day }}rd,
-        {% else %}{{ day }}th
+        {% else %}{{ day }}th,
       {% endcase %}
       {{ post.date | date: "%Y" }}
     </td></tr>
