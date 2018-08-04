@@ -159,6 +159,24 @@ groups around the world.
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
+  <table class="posts">
+    {% for post in site.posts %}
+    <tr>
+    <td><p><a href="{{ post.url }}">{{ post.title }}</a></p><p>{{ post.excerpt }}</p></td>
+    <td>
+      {{ post.date | date: "%B " }}
+      {% assign day = post.date | date: "%-d" %}
+      {% case day %}
+        {% when '1' or '21' or '31' %}{{ day }}st
+        {% when '2' or '22' %}{{ day }}nd
+        {% when '3' or '23' %}{{ day }}rd
+        {% else %}{{ day }}th
+      {% endcase %}
+      {{ post.date | date: ", %Y" }}
+    </td>
+    {% endfor %}
+  </ul>
 </div>
 
 <h2>FAQ</h2>
@@ -175,14 +193,14 @@ groups around the world.
     ways that might otherwise be viewed as industrial "collusion," a trade
     group can accept tax-deductible dues from member companies. The Alliance
     is organized as a 501(c)(3) organization, a charity which can accept tax
-    deductible contributes from the general public.
+    deductible contributions from the general public.
     </p><p>
-    Although the tax status of Software Freedom Conservancy and The C++
-    Alliance are similar, their missions and concerns are different. There
-    is mission overlap. Conservancy, whose mission is to support the
-    development of FLOSS libraries supports the Boost Libraries project,
-    which would also be within the mission of The Alliance, but The
-    Alliance has both a narrower and a broader mission. While Conservancy
+    While the tax status of Software Freedom Conservancy and the Alliance
+    are similar, their missions and concerns are different. There is mission
+    overlap. Conservancy, whose mission is to support the development of
+    FLOSS libraries supports the Boost Libraries project, which would also
+    be within the mission of The Alliance, but The Alliance has both a
+    narrower and a broader mission. While Conservancy
     is language agnostic and is focused on software development, The Alliance
     is focused exclusively on the C++ environment and is free to support
     non-FLOSS projects such as language proposals, books, education materials,
