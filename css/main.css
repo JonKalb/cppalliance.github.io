@@ -6,16 +6,10 @@ body
 div.gold_box {
     background-color: #bd8758;
     color: #fff;
-    padding: 2em;
-    padding-bottom: 2.2em;
-    margin-bottom: 3em;
     text-align: center;
 }
 div.red_box {
     background-color: #ab1d21;
     color: #fff;
-    padding: 2em;
-    padding-bottom: 2.2em;
-    margin-bottom: 3em;
     text-align: center;
 }
