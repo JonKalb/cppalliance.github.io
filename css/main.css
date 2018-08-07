@@ -3,7 +3,7 @@ body
 {
     font-family:"Roboto",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-.gold {
+.gold_box {
     background-color: #bd8758;
     color: #fff;
     padding: 2em;
@@ -12,7 +12,7 @@ body
     font-size: 1.4em;
     text-align: center;
 }
-.red {
+.red_box {
     background-color: #ab1d21;
     color: #fff;
     padding: 2em;
