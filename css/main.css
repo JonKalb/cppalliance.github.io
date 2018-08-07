@@ -3,8 +3,17 @@ body
 {
     font-family:"Roboto",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
-.gold_headline {
+.gold {
     background-color: #bd8758;
+    color: #fff;
+    padding: 2em;
+    padding-bottom: 2.2em;
+    margin-bottom: 3em;
+    font-size: 1.4em;
+    text-align: center;
+}
+.red {
+    background-color: #ab1d21;
     color: #fff;
     padding: 2em;
     padding-bottom: 2.2em;
