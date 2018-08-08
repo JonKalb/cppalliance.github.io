@@ -1,0 +1,25 @@
+---
+layout: default
+title: Vinnie Falco
+---
+<h1>Vinnie Falco</h1>
+<p><b>Title</b>Founder, President</p>
+<p>
+With 35 years of programming experience (25 years with C++), and
+10 years experience with managing technology startups, Vinnie provides
+a strong vision and technical leadership to the organization. His
+open source accomplishments include Boost.Beast, NuDB, DSPFilters,
+and extensive contribution to Ripple. He is also known for authoring
+the BearShare file sharing application in 2001.
+</p>
+
+<div id="home">
+  <h1>Updates</h1>
+  <ul class="posts">
+    {% for post in site.categories.vinnie %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+</div>
+
